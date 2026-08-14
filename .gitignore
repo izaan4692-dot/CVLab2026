@@ -1,0 +1,111 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ===================
+# FRONTEND (Next.js)
+# ===================
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/.claude
+/prompts
+/reference_project
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env*.local
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# ===================
+# BACKEND (Python/FastAPI)
+# ===================
+
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/**/*.pyc
+*.pyc
+__pycache__/
+.Python
+*.py[cod]
+*$py.class
+
+# Environment
+backend/.env
+backend/.env.production
+backend/.env.local
+!backend/.env.example
+!backend/.env.production.template
+
+# Uploads (user data)
+backend/uploads/original/*
+backend/uploads/optimized/*
+!backend/uploads/original/.gitkeep
+!backend/uploads/optimized/.gitkeep
+
+# Test files
+backend/test_*.py
+backend/debug_*.py
+backend/sample_*.txt
+backend/optimized_resume_sample.txt
+
+# Admin/Auth tokens (generated files)
+backend/admin_token.txt
+backend/*.token
+
+# Development docs (not needed in production)
+backend/DAY1_PROGRESS_REPORT.md
+backend/FIXED_JSON_PARSING.md
+backend/SETUP_LOCAL.md
+
+# Alembic
+backend/alembic/versions/*.pyc
+
+# Supabase
+backend/.supabase/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Docker volumes (local)
+postgres_data/
+redis_data/

@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment files (added separately)
+.env
+.env.local
+.env.development
+
+# Tests
+test_*.py
+tests/
+pytest_cache/
+.coverage
+
+# Docs
+README.md
+*.md
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Uploads (mounted as volume)
+uploads/
+
+# Logs
+*.log
+
+# Alembic versions (keep migrations)
+alembic/versions/__pycache__/
